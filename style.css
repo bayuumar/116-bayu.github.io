@@ -1,0 +1,230 @@
+
+body{
+	background-image:linear-gradient(green,yellow) ;
+  background-size:cover;
+  background-attachment: fixed;
+  line-height: 30px;
+}
+*{
+  box-sizing: border-box;
+    }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  animation: fadeIn 2s;
+}
+.table-container{
+  width: 100%;
+}
+.title{
+  background-color: #0f6117;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom-right-radius: 5px; 
+  margin-bottom: 15px;    
+  font-size: 25px;
+  min-width: 300px;
+  text-align: center;
+  box-shadow: 7px 7px yellow;
+}
+hr{
+  margin: 0;
+  border: solid 1px #0f6117;
+}
+.profile{
+  width: 50%;
+}
+.profile img{
+  width: 200px;
+  float: left;
+  margin-right: 15px;
+}
+.table-container td{
+  vertical-align: top;
+  padding: 15px;    
+}
+.skill .content{
+  background-color: white;
+  color: #333333;
+  padding: 15px;
+  border-radius: 5px;
+}
+.skill ul{
+  margin: 0;
+  list-style: none;
+}
+.skill li{
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  border-bottom: solid 1px #f1f1f1;
+}
+.skill .level{
+  background-color: #0f6117;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+.table{
+  margin-top: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.table th{
+  background-color: #0B8389;
+  padding: 10px 15px;
+}
+.table td{
+  padding: 10px 15px;
+  color: #393939;
+}
+.table tr:nth-child(even) {
+  background-color: white;
+}
+.table tr:nth-child(odd) {
+  background-color: #dfdfdf;
+ } 
+footer {
+  background-color: white;
+  padding: 15px 0px;
+}
+input[type="text"], textarea{
+  outline: none ;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  font-family: Helvetica;
+  border:solid 3px #e8e8e8;
+  transition: 0.5s;
+}
+.form-grup{
+  margin-bottom: 15px;
+}
+button{
+  padding:  10px 15px;
+  color: white;
+  border-radius: 5px;
+  border:none;
+}
+button[type="submit"] {
+  background-color: #0B8389;
+  border-bottom: solid 2px #036a6f;
+}
+button[type="riset"] {
+  background-color: #d12f2f;
+  border-bottom: solid 2px #af1f1f;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.floatwa {
+ bottom:0px;
+ right: 0px;
+ background-color:#ffffff;
+ width:50%;
+ z-index:1000;
+ padding:2px;
+ margin:auto;
+ text-align:center;
+ float:none;
+ box-shadow: 0px -2px 10px #c0c0c0;
+}
+.tombolwa {
+ border: 1px #56aa71 solid;
+ background-color:#2f7e49;
+ width:45%;
+ padding:4px;
+ text-align:center;
+ margin:0;
+ border-radius: 5px;
+ margin:auto;
+text-align:center;
+  float:none;
+}
+.floatwa a{
+color:white;
+}
+footer {
+  display: block;
+}
+
+.profile .title::after {*/
+  animation: scaleIn 1.3s ease-in 0.2s forwards;
+}
+
+.skill .title {
+  animation: fadeIn 1s ease-in 0.7s forwards;
+}
+
+.content .level nav > *,
+.content .level > * {
+  animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.8s ease-in 0.9s forwards;
+}
+
+.content .level .table * {
+  animation: slideIn 0.6s cubic-bezier(0.54, 0.46, 0.54, 0.94) 2s forwards;
+}
+
+@keyframes fadeIn {
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0);
+  }
+}
